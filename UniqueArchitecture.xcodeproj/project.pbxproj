@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		8966EC821AFC8C930021CED7 /* UAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8966EC811AFC8C930021CED7 /* UAViewController.m */; };
+		8966EC851AFC8CB80021CED7 /* UATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8966EC841AFC8CB80021CED7 /* UATableViewController.m */; };
 		897A96041AFC85E700BEEEFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 897A96031AFC85E700BEEEFB /* main.m */; };
 		897A96071AFC85E800BEEEFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 897A96061AFC85E800BEEEFB /* AppDelegate.m */; };
 		897A960A1AFC85E800BEEEFB /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 897A96091AFC85E800BEEEFB /* MasterViewController.m */; };
@@ -32,6 +34,10 @@
 		3735FE7A580AD582F7F54F58 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		73E91AC0C588F5C68BB279D2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		875F2C0854B807A8A016EC4A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
+		8966EC801AFC8C930021CED7 /* UAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAViewController.h; sourceTree = "<group>"; };
+		8966EC811AFC8C930021CED7 /* UAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAViewController.m; sourceTree = "<group>"; };
+		8966EC831AFC8CB80021CED7 /* UATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UATableViewController.h; sourceTree = "<group>"; };
+		8966EC841AFC8CB80021CED7 /* UATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UATableViewController.m; sourceTree = "<group>"; };
 		897A95FE1AFC85E700BEEEFB /* UniqueArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniqueArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		897A96021AFC85E700BEEEFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		897A96031AFC85E700BEEEFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -68,6 +74,25 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		8966EC7E1AFC8B5B0021CED7 /* UABase */ = {
+			isa = PBXGroup;
+			children = (
+				8966EC7F1AFC8C270021CED7 /* UAViewController */,
+			);
+			path = UABase;
+			sourceTree = "<group>";
+		};
+		8966EC7F1AFC8C270021CED7 /* UAViewController */ = {
+			isa = PBXGroup;
+			children = (
+				8966EC801AFC8C930021CED7 /* UAViewController.h */,
+				8966EC811AFC8C930021CED7 /* UAViewController.m */,
+				8966EC831AFC8CB80021CED7 /* UATableViewController.h */,
+				8966EC841AFC8CB80021CED7 /* UATableViewController.m */,
+			);
+			name = UAViewController;
+			sourceTree = "<group>";
+		};
 		897A95F51AFC85E700BEEEFB = {
 			isa = PBXGroup;
 			children = (
@@ -91,6 +116,7 @@
 		897A96001AFC85E700BEEEFB /* UniqueArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				8966EC7E1AFC8B5B0021CED7 /* UABase */,
 				897A96051AFC85E700BEEEFB /* AppDelegate.h */,
 				897A96061AFC85E800BEEEFB /* AppDelegate.m */,
 				897A96081AFC85E800BEEEFB /* MasterViewController.h */,
@@ -286,7 +312,9 @@
 				897A96071AFC85E800BEEEFB /* AppDelegate.m in Sources */,
 				897A960A1AFC85E800BEEEFB /* MasterViewController.m in Sources */,
 				897A96041AFC85E700BEEEFB /* main.m in Sources */,
+				8966EC851AFC8CB80021CED7 /* UATableViewController.m in Sources */,
 				897A960D1AFC85E800BEEEFB /* DetailViewController.m in Sources */,
+				8966EC821AFC8C930021CED7 /* UAViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
