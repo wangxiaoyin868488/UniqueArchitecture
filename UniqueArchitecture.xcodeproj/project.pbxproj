@@ -8,12 +8,12 @@
 
 /* Begin PBXBuildFile section */
 		894D4AA01AFF51DB006F97B2 /* UATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 894D4A9F1AFF51DB006F97B2 /* UATabBarController.m */; };
+		894D4AC91AFF5E17006F97B2 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 894D4AC81AFF5E17006F97B2 /* HomePageViewController.m */; };
 		8966EC821AFC8C930021CED7 /* UAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8966EC811AFC8C930021CED7 /* UAViewController.m */; };
 		8966EC851AFC8CB80021CED7 /* UATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8966EC841AFC8CB80021CED7 /* UATableViewController.m */; };
 		897A96041AFC85E700BEEEFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 897A96031AFC85E700BEEEFB /* main.m */; };
 		897A96071AFC85E800BEEEFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 897A96061AFC85E800BEEEFB /* AppDelegate.m */; };
 		897A960A1AFC85E800BEEEFB /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 897A96091AFC85E800BEEEFB /* MasterViewController.m */; };
-		897A960D1AFC85E800BEEEFB /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 897A960C1AFC85E800BEEEFB /* DetailViewController.m */; };
 		897A96101AFC85E800BEEEFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 897A960E1AFC85E800BEEEFB /* Main.storyboard */; };
 		897A96121AFC85E800BEEEFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897A96111AFC85E800BEEEFB /* Images.xcassets */; };
 		897A96151AFC85E800BEEEFB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 897A96131AFC85E800BEEEFB /* LaunchScreen.xib */; };
@@ -37,6 +37,11 @@
 		875F2C0854B807A8A016EC4A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
 		894D4A9E1AFF51DB006F97B2 /* UATabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UATabBarController.h; sourceTree = "<group>"; };
 		894D4A9F1AFF51DB006F97B2 /* UATabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UATabBarController.m; sourceTree = "<group>"; };
+		894D4AA11AFF5511006F97B2 /* UniqueAcichitecturePrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniqueAcichitecturePrefix.pch; sourceTree = "<group>"; };
+		894D4AA21AFF5533006F97B2 /* UAConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAConfigManager.h; sourceTree = "<group>"; };
+		894D4AA31AFF56AD006F97B2 /* UniqueArchitecture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniqueArchitecture.h; sourceTree = "<group>"; };
+		894D4AC71AFF5E17006F97B2 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
+		894D4AC81AFF5E17006F97B2 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
 		8966EC801AFC8C930021CED7 /* UAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAViewController.h; sourceTree = "<group>"; };
 		8966EC811AFC8C930021CED7 /* UAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAViewController.m; sourceTree = "<group>"; };
 		8966EC831AFC8CB80021CED7 /* UATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UATableViewController.h; sourceTree = "<group>"; };
@@ -48,8 +53,6 @@
 		897A96061AFC85E800BEEEFB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		897A96081AFC85E800BEEEFB /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		897A96091AFC85E800BEEEFB /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		897A960B1AFC85E800BEEEFB /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		897A960C1AFC85E800BEEEFB /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		897A960F1AFC85E800BEEEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		897A96111AFC85E800BEEEFB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		897A96141AFC85E800BEEEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -77,6 +80,23 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		894D4AC51AFF5DEA006F97B2 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				894D4AC61AFF5DF1006F97B2 /* HomePage */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		894D4AC61AFF5DF1006F97B2 /* HomePage */ = {
+			isa = PBXGroup;
+			children = (
+				894D4AC71AFF5E17006F97B2 /* HomePageViewController.h */,
+				894D4AC81AFF5E17006F97B2 /* HomePageViewController.m */,
+			);
+			name = HomePage;
+			sourceTree = "<group>";
+		};
 		8966EC7E1AFC8B5B0021CED7 /* UABase */ = {
 			isa = PBXGroup;
 			children = (
@@ -122,16 +142,16 @@
 			isa = PBXGroup;
 			children = (
 				8966EC7E1AFC8B5B0021CED7 /* UABase */,
+				894D4AC51AFF5DEA006F97B2 /* View */,
 				897A96051AFC85E700BEEEFB /* AppDelegate.h */,
 				897A96061AFC85E800BEEEFB /* AppDelegate.m */,
 				897A96081AFC85E800BEEEFB /* MasterViewController.h */,
 				897A96091AFC85E800BEEEFB /* MasterViewController.m */,
-				897A960B1AFC85E800BEEEFB /* DetailViewController.h */,
-				897A960C1AFC85E800BEEEFB /* DetailViewController.m */,
 				897A960E1AFC85E800BEEEFB /* Main.storyboard */,
 				897A96111AFC85E800BEEEFB /* Images.xcassets */,
 				897A96131AFC85E800BEEEFB /* LaunchScreen.xib */,
 				897A96011AFC85E700BEEEFB /* Supporting Files */,
+				894D4AA31AFF56AD006F97B2 /* UniqueArchitecture.h */,
 			);
 			path = UniqueArchitecture;
 			sourceTree = "<group>";
@@ -141,6 +161,8 @@
 			children = (
 				897A96021AFC85E700BEEEFB /* Info.plist */,
 				897A96031AFC85E700BEEEFB /* main.m */,
+				894D4AA11AFF5511006F97B2 /* UniqueAcichitecturePrefix.pch */,
+				894D4AA21AFF5533006F97B2 /* UAConfigManager.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -318,8 +340,8 @@
 				897A96071AFC85E800BEEEFB /* AppDelegate.m in Sources */,
 				897A960A1AFC85E800BEEEFB /* MasterViewController.m in Sources */,
 				897A96041AFC85E700BEEEFB /* main.m in Sources */,
+				894D4AC91AFF5E17006F97B2 /* HomePageViewController.m in Sources */,
 				8966EC851AFC8CB80021CED7 /* UATableViewController.m in Sources */,
-				897A960D1AFC85E800BEEEFB /* DetailViewController.m in Sources */,
 				8966EC821AFC8C930021CED7 /* UAViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -449,6 +471,7 @@
 			baseConfigurationReference = 73E91AC0C588F5C68BB279D2 /* Pods.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = UniqueArchitecture/UniqueAcichitecturePrefix.pch;
 				INFOPLIST_FILE = UniqueArchitecture/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
@@ -461,6 +484,7 @@
 			baseConfigurationReference = 3735FE7A580AD582F7F54F58 /* Pods.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				GCC_PREFIX_HEADER = UniqueArchitecture/UniqueAcichitecturePrefix.pch;
 				INFOPLIST_FILE = UniqueArchitecture/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 7.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";

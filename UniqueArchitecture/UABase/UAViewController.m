@@ -10,4 +10,22 @@
 
 @implementation UAViewController
 
+- (instancetype)init{
+    self = [super init];
+    
+    if (self) {
+        //
+    }
+    return  self;
+}
+
+- (void)viewDidLoad{
+    [super viewDidLoad];
+    self.view.backgroundColor = [UIColor whiteColor];
+
+    if ([self respondsToSelector:@selector(setEdgesForExtendedLayout:)]) {
+        self.edgesForExtendedLayout = UIRectEdgeNone;
+    }
+}
+
 @end
