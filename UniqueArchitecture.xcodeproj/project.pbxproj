@@ -15,6 +15,7 @@
 		897A96121AFC85E800BEEEFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897A96111AFC85E800BEEEFB /* Images.xcassets */; };
 		897A96151AFC85E800BEEEFB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 897A96131AFC85E800BEEEFB /* LaunchScreen.xib */; };
 		897A96211AFC85E800BEEEFB /* UniqueArchitectureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 897A96201AFC85E800BEEEFB /* UniqueArchitectureTests.m */; };
+		B0B1E8E51AFE00AB005B9992 /* UABaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = B0B1E8E41AFE00AB005B9992 /* UABaseDao.m */; };
 		C36CE017C60CA86895F481FC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 875F2C0854B807A8A016EC4A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -47,6 +48,10 @@
 		897A961A1AFC85E800BEEEFB /* UniqueArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniqueArchitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		897A961F1AFC85E800BEEEFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		897A96201AFC85E800BEEEFB /* UniqueArchitectureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UniqueArchitectureTests.m; sourceTree = "<group>"; };
+		B0B1E8E11AFDFFAD005B9992 /* UAPrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAPrefix.pch; sourceTree = "<group>"; };
+		B0B1E8E21AFDFFE6005B9992 /* UniqueArichitecture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniqueArichitecture.h; sourceTree = "<group>"; };
+		B0B1E8E31AFE00AB005B9992 /* UABaseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UABaseDao.h; sourceTree = "<group>"; };
+		B0B1E8E41AFE00AB005B9992 /* UABaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UABaseDao.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -91,6 +96,7 @@
 		897A96001AFC85E700BEEEFB /* UniqueArchitecture */ = {
 			isa = PBXGroup;
 			children = (
+				B0B1E8E01AFDFE70005B9992 /* DB */,
 				897A96051AFC85E700BEEEFB /* AppDelegate.h */,
 				897A96061AFC85E800BEEEFB /* AppDelegate.m */,
 				897A96081AFC85E800BEEEFB /* MasterViewController.h */,
@@ -110,6 +116,8 @@
 			children = (
 				897A96021AFC85E700BEEEFB /* Info.plist */,
 				897A96031AFC85E700BEEEFB /* main.m */,
+				B0B1E8E11AFDFFAD005B9992 /* UAPrefix.pch */,
+				B0B1E8E21AFDFFE6005B9992 /* UniqueArichitecture.h */,
 			);
 			name = "Supporting Files";
 			sourceTree = "<group>";
@@ -129,6 +137,15 @@
 				897A961F1AFC85E800BEEEFB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		B0B1E8E01AFDFE70005B9992 /* DB */ = {
+			isa = PBXGroup;
+			children = (
+				B0B1E8E31AFE00AB005B9992 /* UABaseDao.h */,
+				B0B1E8E41AFE00AB005B9992 /* UABaseDao.m */,
+			);
+			name = DB;
 			sourceTree = "<group>";
 		};
 		B86110592408166335E58220 /* Frameworks */ = {
@@ -286,6 +303,7 @@
 				897A96071AFC85E800BEEEFB /* AppDelegate.m in Sources */,
 				897A960A1AFC85E800BEEEFB /* MasterViewController.m in Sources */,
 				897A96041AFC85E700BEEEFB /* main.m in Sources */,
+				B0B1E8E51AFE00AB005B9992 /* UABaseDao.m in Sources */,
 				897A960D1AFC85E800BEEEFB /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
