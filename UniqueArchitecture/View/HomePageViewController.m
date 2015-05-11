@@ -11,13 +11,14 @@
 
 @implementation HomePageViewController
 
-
-
 - (void)dropViewDidBeginRefreshing:(id)sender{
     DBGLog(@"dropViewDidBeginRefreshing..");
     AFHTTPRequestOperationManager *manager = [AFHTTPRequestOperationManager manager];
+    manager.responseSerializer.acceptableContentTypes = [NSSet setWithObjects:@"text/html",@"application/json", @"text/json", @"text/javascript",nil];//设置相应内容类型
+    manager.requestSerializer = [AFHTTPRequestSerializer serializer];
+    manager.responseSerializer = [AFHTTPResponseSerializer serializer];
     
-    [manager GET:@"http://www.baidu.com" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
+    [manager GET:@"http://m.jd.com" parameters:nil success:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
         [self endRefreshing];
         
@@ -25,6 +26,9 @@
         NSLog(@"Error: %@", error);
         [self endRefreshing];
     }];
+    
+    
+   
 }
 
 

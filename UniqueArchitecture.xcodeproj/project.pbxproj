@@ -7,10 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		894D4AA01AFF51DB006F97B2 /* UATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 894D4A9F1AFF51DB006F97B2 /* UATabBarController.m */; };
 		894D4AC91AFF5E17006F97B2 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 894D4AC81AFF5E17006F97B2 /* HomePageViewController.m */; };
-		8966EC821AFC8C930021CED7 /* UAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8966EC811AFC8C930021CED7 /* UAViewController.m */; };
-		8966EC851AFC8CB80021CED7 /* UATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8966EC841AFC8CB80021CED7 /* UATableViewController.m */; };
 		897A96041AFC85E700BEEEFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 897A96031AFC85E700BEEEFB /* main.m */; };
 		897A96071AFC85E800BEEEFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 897A96061AFC85E800BEEEFB /* AppDelegate.m */; };
 		897A960A1AFC85E800BEEEFB /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 897A96091AFC85E800BEEEFB /* MasterViewController.m */; };
@@ -18,6 +15,11 @@
 		897A96121AFC85E800BEEEFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897A96111AFC85E800BEEEFB /* Images.xcassets */; };
 		897A96151AFC85E800BEEEFB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 897A96131AFC85E800BEEEFB /* LaunchScreen.xib */; };
 		897A96211AFC85E800BEEEFB /* UniqueArchitectureTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 897A96201AFC85E800BEEEFB /* UniqueArchitectureTests.m */; };
+		898F0A6C1B005D3600091005 /* UATabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 898F0A671B005D3600091005 /* UATabBarController.m */; };
+		898F0A6D1B005D3600091005 /* UATableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 898F0A691B005D3600091005 /* UATableViewController.m */; };
+		898F0A6E1B005D3600091005 /* UAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 898F0A6B1B005D3600091005 /* UAViewController.m */; };
+		898F0A711B00984C00091005 /* UARequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 898F0A701B00984C00091005 /* UARequestModel.m */; };
+		898F0A741B0099A100091005 /* UAHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 898F0A731B0099A100091005 /* UAHttpRequest.m */; };
 		C36CE017C60CA86895F481FC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 875F2C0854B807A8A016EC4A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -35,17 +37,11 @@
 		3735FE7A580AD582F7F54F58 /* Pods.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.release.xcconfig; path = "Pods/Target Support Files/Pods/Pods.release.xcconfig"; sourceTree = "<group>"; };
 		73E91AC0C588F5C68BB279D2 /* Pods.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = Pods.debug.xcconfig; path = "Pods/Target Support Files/Pods/Pods.debug.xcconfig"; sourceTree = "<group>"; };
 		875F2C0854B807A8A016EC4A /* libPods.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = libPods.a; sourceTree = BUILT_PRODUCTS_DIR; };
-		894D4A9E1AFF51DB006F97B2 /* UATabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UATabBarController.h; sourceTree = "<group>"; };
-		894D4A9F1AFF51DB006F97B2 /* UATabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UATabBarController.m; sourceTree = "<group>"; };
 		894D4AA11AFF5511006F97B2 /* UniqueAcichitecturePrefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniqueAcichitecturePrefix.pch; sourceTree = "<group>"; };
 		894D4AA21AFF5533006F97B2 /* UAConfigManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAConfigManager.h; sourceTree = "<group>"; };
 		894D4AA31AFF56AD006F97B2 /* UniqueArchitecture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniqueArchitecture.h; sourceTree = "<group>"; };
 		894D4AC71AFF5E17006F97B2 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
 		894D4AC81AFF5E17006F97B2 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
-		8966EC801AFC8C930021CED7 /* UAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAViewController.h; sourceTree = "<group>"; };
-		8966EC811AFC8C930021CED7 /* UAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAViewController.m; sourceTree = "<group>"; };
-		8966EC831AFC8CB80021CED7 /* UATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UATableViewController.h; sourceTree = "<group>"; };
-		8966EC841AFC8CB80021CED7 /* UATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UATableViewController.m; sourceTree = "<group>"; };
 		897A95FE1AFC85E700BEEEFB /* UniqueArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniqueArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		897A96021AFC85E700BEEEFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		897A96031AFC85E700BEEEFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -59,6 +55,16 @@
 		897A961A1AFC85E800BEEEFB /* UniqueArchitectureTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = UniqueArchitectureTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		897A961F1AFC85E800BEEEFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		897A96201AFC85E800BEEEFB /* UniqueArchitectureTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = UniqueArchitectureTests.m; sourceTree = "<group>"; };
+		898F0A661B005D3600091005 /* UATabBarController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UATabBarController.h; path = UniqueArchitecture/UAKit/UABase/UATabBarController.h; sourceTree = SOURCE_ROOT; };
+		898F0A671B005D3600091005 /* UATabBarController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UATabBarController.m; path = UniqueArchitecture/UAKit/UABase/UATabBarController.m; sourceTree = SOURCE_ROOT; };
+		898F0A681B005D3600091005 /* UATableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UATableViewController.h; path = UniqueArchitecture/UAKit/UABase/UATableViewController.h; sourceTree = SOURCE_ROOT; };
+		898F0A691B005D3600091005 /* UATableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UATableViewController.m; path = UniqueArchitecture/UAKit/UABase/UATableViewController.m; sourceTree = SOURCE_ROOT; };
+		898F0A6A1B005D3600091005 /* UAViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = UAViewController.h; path = UniqueArchitecture/UAKit/UABase/UAViewController.h; sourceTree = SOURCE_ROOT; };
+		898F0A6B1B005D3600091005 /* UAViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = UAViewController.m; path = UniqueArchitecture/UAKit/UABase/UAViewController.m; sourceTree = SOURCE_ROOT; };
+		898F0A6F1B00984C00091005 /* UARequestModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UARequestModel.h; sourceTree = "<group>"; };
+		898F0A701B00984C00091005 /* UARequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UARequestModel.m; sourceTree = "<group>"; };
+		898F0A721B0099A100091005 /* UAHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAHttpRequest.h; sourceTree = "<group>"; };
+		898F0A731B0099A100091005 /* UAHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAHttpRequest.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -102,18 +108,19 @@
 			children = (
 				8966EC7F1AFC8C270021CED7 /* UAViewController */,
 			);
-			path = UABase;
+			name = UABase;
+			path = ../UABase;
 			sourceTree = "<group>";
 		};
 		8966EC7F1AFC8C270021CED7 /* UAViewController */ = {
 			isa = PBXGroup;
 			children = (
-				8966EC801AFC8C930021CED7 /* UAViewController.h */,
-				8966EC811AFC8C930021CED7 /* UAViewController.m */,
-				8966EC831AFC8CB80021CED7 /* UATableViewController.h */,
-				8966EC841AFC8CB80021CED7 /* UATableViewController.m */,
-				894D4A9E1AFF51DB006F97B2 /* UATabBarController.h */,
-				894D4A9F1AFF51DB006F97B2 /* UATabBarController.m */,
+				898F0A661B005D3600091005 /* UATabBarController.h */,
+				898F0A671B005D3600091005 /* UATabBarController.m */,
+				898F0A681B005D3600091005 /* UATableViewController.h */,
+				898F0A691B005D3600091005 /* UATableViewController.m */,
+				898F0A6A1B005D3600091005 /* UAViewController.h */,
+				898F0A6B1B005D3600091005 /* UAViewController.m */,
 			);
 			name = UAViewController;
 			sourceTree = "<group>";
@@ -141,7 +148,7 @@
 		897A96001AFC85E700BEEEFB /* UniqueArchitecture */ = {
 			isa = PBXGroup;
 			children = (
-				8966EC7E1AFC8B5B0021CED7 /* UABase */,
+				898F0A5A1B005CEA00091005 /* UAKit */,
 				894D4AC51AFF5DEA006F97B2 /* View */,
 				897A96051AFC85E700BEEEFB /* AppDelegate.h */,
 				897A96061AFC85E800BEEEFB /* AppDelegate.m */,
@@ -182,6 +189,26 @@
 				897A961F1AFC85E800BEEEFB /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		898F0A5A1B005CEA00091005 /* UAKit */ = {
+			isa = PBXGroup;
+			children = (
+				8966EC7E1AFC8B5B0021CED7 /* UABase */,
+				898F0A621B005CEA00091005 /* UANetWork */,
+			);
+			path = UAKit;
+			sourceTree = "<group>";
+		};
+		898F0A621B005CEA00091005 /* UANetWork */ = {
+			isa = PBXGroup;
+			children = (
+				898F0A6F1B00984C00091005 /* UARequestModel.h */,
+				898F0A701B00984C00091005 /* UARequestModel.m */,
+				898F0A721B0099A100091005 /* UAHttpRequest.h */,
+				898F0A731B0099A100091005 /* UAHttpRequest.m */,
+			);
+			path = UANetWork;
 			sourceTree = "<group>";
 		};
 		B86110592408166335E58220 /* Frameworks */ = {
@@ -336,13 +363,15 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				894D4AA01AFF51DB006F97B2 /* UATabBarController.m in Sources */,
 				897A96071AFC85E800BEEEFB /* AppDelegate.m in Sources */,
 				897A960A1AFC85E800BEEEFB /* MasterViewController.m in Sources */,
+				898F0A741B0099A100091005 /* UAHttpRequest.m in Sources */,
+				898F0A6E1B005D3600091005 /* UAViewController.m in Sources */,
+				898F0A711B00984C00091005 /* UARequestModel.m in Sources */,
 				897A96041AFC85E700BEEEFB /* main.m in Sources */,
+				898F0A6D1B005D3600091005 /* UATableViewController.m in Sources */,
+				898F0A6C1B005D3600091005 /* UATabBarController.m in Sources */,
 				894D4AC91AFF5E17006F97B2 /* HomePageViewController.m in Sources */,
-				8966EC851AFC8CB80021CED7 /* UATableViewController.m in Sources */,
-				8966EC821AFC8C930021CED7 /* UAViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
