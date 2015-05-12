@@ -1,0 +1,15 @@
+//
+//  UAPrefix.pch
+//  UniqueArchitecture
+//
+//  Created by ccguo on 15/5/9.
+//  Copyright (c) 2015年 summer. All rights reserved.
+//
+
+#ifndef UniqueArchitecture_UAPrefix_pch
+#define UniqueArchitecture_UAPrefix_pch
+
+// Include any system framework and library headers here that should be included in all compilation units.
+// You will also need to set the Prefix Header build setting of one or more of your targets to reference this file.
+
+#endif

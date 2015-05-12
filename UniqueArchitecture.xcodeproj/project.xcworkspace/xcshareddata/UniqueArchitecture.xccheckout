@@ -5,7 +5,7 @@
 	<key>IDESourceControlProjectFavoriteDictionaryKey</key>
 	<false/>
 	<key>IDESourceControlProjectIdentifier</key>
-	<string>861D989F-223C-4BFA-8F43-536BD3BCDDD8</string>
+	<string>694BA465-E0C8-4365-882C-57FF74430825</string>
 	<key>IDESourceControlProjectName</key>
 	<string>UniqueArchitecture</string>
 	<key>IDESourceControlProjectOriginsDictionary</key>
@@ -14,11 +14,11 @@
 		<string>https://github.com/ccguo/UniqueArchitecture.git</string>
 	</dict>
 	<key>IDESourceControlProjectPath</key>
-	<string>UniqueArchitecture.xcworkspace</string>
+	<string>UniqueArchitecture.xcodeproj</string>
 	<key>IDESourceControlProjectRelativeInstallPathDictionary</key>
 	<dict>
 		<key>EF021A8473EFF81E6B71574D4B1DA03B81AE67B8</key>
-		<string>..</string>
+		<string>../..</string>
 	</dict>
 	<key>IDESourceControlProjectURL</key>
 	<string>https://github.com/ccguo/UniqueArchitecture.git</string>
