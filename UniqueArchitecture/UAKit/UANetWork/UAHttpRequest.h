@@ -8,14 +8,20 @@
 
 #import <Foundation/Foundation.h>
 #import <AFHTTPRequestOperation.h>
+#import "UARequestModel.h"
 
 @interface UAHttpRequest : NSObject{
 }
 
 @property (nonatomic,retain) AFHTTPRequestOperation *request;
+@property (nonatomic,retain) UARequestModel *requestModel;
 
-+ (UAHttpRequest *)manager;
++ (UAHttpRequest *)requestWithModel:(UARequestModel *)model;
+
+- (instancetype)initWithRequest:(UARequestModel *)model;
 
 - (void)setCompletionBlockWithSuccess:(void (^)(UAHttpRequest *request, id responseObject))success
                               failure:(void (^)(UAHttpRequest *request, NSError *error))failure;
+- (void)cancel;
+
 @end

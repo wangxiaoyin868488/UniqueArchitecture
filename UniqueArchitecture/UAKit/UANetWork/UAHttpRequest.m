@@ -10,26 +10,28 @@
 
 @implementation UAHttpRequest
 
-+ (UAHttpRequest *)manager{
-    return [[UAHttpRequest alloc] init];
++ (UAHttpRequest *)requestWithModel:(UARequestModel *)model{
+    return [[UAHttpRequest alloc] initWithRequest:model];
 }
 
-- (instancetype)initWithRequest:(NSURLRequest *)request{
+- (instancetype)initWithRequest:(UARequestModel *)model{
     self = [super init];
     
     if (self) {
         //
-        NSURL *URL = [NSURL URLWithString:@"http://example.com/resources/123.json"];
+        self.requestModel = model;
+        
+        NSURL *URL = [NSURL URLWithString:@""];
         NSURLRequest *request = [NSURLRequest requestWithURL:URL];
         _request = [[AFHTTPRequestOperation alloc] initWithRequest:request];
         _request.responseSerializer = [AFJSONResponseSerializer serializer];
+        [_request start];
     }
     return self;
 }
 
 - (void)setCompletionBlockWithSuccess:(void (^)(UAHttpRequest *request, id responseObject))success
                               failure:(void (^)(UAHttpRequest *request, NSError *error))failure{
-    
     __block UAHttpRequest *weakself = self;
        [_request setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
@@ -38,7 +40,9 @@
         NSLog(@"Error: %@", error);
         failure(weakself,error);
     }];
+}
 
+- (void)cancel{
 }
 
 @end
