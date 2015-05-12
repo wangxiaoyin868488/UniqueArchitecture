@@ -10,7 +10,6 @@
 		897A96041AFC85E700BEEEFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 897A96031AFC85E700BEEEFB /* main.m */; };
 		897A96071AFC85E800BEEEFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 897A96061AFC85E800BEEEFB /* AppDelegate.m */; };
 		897A960A1AFC85E800BEEEFB /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 897A96091AFC85E800BEEEFB /* MasterViewController.m */; };
-		897A960D1AFC85E800BEEEFB /* DetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 897A960C1AFC85E800BEEEFB /* DetailViewController.m */; };
 		897A96101AFC85E800BEEEFB /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 897A960E1AFC85E800BEEEFB /* Main.storyboard */; };
 		897A96121AFC85E800BEEEFB /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 897A96111AFC85E800BEEEFB /* Images.xcassets */; };
 		897A96151AFC85E800BEEEFB /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 897A96131AFC85E800BEEEFB /* LaunchScreen.xib */; };
@@ -40,8 +39,6 @@
 		897A96061AFC85E800BEEEFB /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		897A96081AFC85E800BEEEFB /* MasterViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MasterViewController.h; sourceTree = "<group>"; };
 		897A96091AFC85E800BEEEFB /* MasterViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MasterViewController.m; sourceTree = "<group>"; };
-		897A960B1AFC85E800BEEEFB /* DetailViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DetailViewController.h; sourceTree = "<group>"; };
-		897A960C1AFC85E800BEEEFB /* DetailViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DetailViewController.m; sourceTree = "<group>"; };
 		897A960F1AFC85E800BEEEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		897A96111AFC85E800BEEEFB /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		897A96141AFC85E800BEEEFB /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LaunchScreen.xib; sourceTree = "<group>"; };
@@ -101,8 +98,6 @@
 				897A96061AFC85E800BEEEFB /* AppDelegate.m */,
 				897A96081AFC85E800BEEEFB /* MasterViewController.h */,
 				897A96091AFC85E800BEEEFB /* MasterViewController.m */,
-				897A960B1AFC85E800BEEEFB /* DetailViewController.h */,
-				897A960C1AFC85E800BEEEFB /* DetailViewController.m */,
 				897A960E1AFC85E800BEEEFB /* Main.storyboard */,
 				897A96111AFC85E800BEEEFB /* Images.xcassets */,
 				897A96131AFC85E800BEEEFB /* LaunchScreen.xib */,
@@ -304,7 +299,6 @@
 				897A960A1AFC85E800BEEEFB /* MasterViewController.m in Sources */,
 				897A96041AFC85E700BEEEFB /* main.m in Sources */,
 				B0B1E8E51AFE00AB005B9992 /* UABaseDao.m in Sources */,
-				897A960D1AFC85E800BEEEFB /* DetailViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
