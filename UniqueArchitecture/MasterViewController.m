@@ -7,6 +7,7 @@
 //
 
 #import "MasterViewController.h"
+#import "HomePageViewController.h"
 
 @interface MasterViewController ()
 
@@ -14,7 +15,24 @@
 @end
 
 @implementation MasterViewController
+
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
+    // Do any additional setup after loading the view, typically from a nib.
+    self.navigationItem.leftBarButtonItem = self.editButtonItem;
+
+   
+}
+
+- (void)didReceiveMemoryWarning {
+    [super didReceiveMemoryWarning];
+    // Dispose of any resources that can be recreated.
+}
+
+- (IBAction)action1:(id)sender {
+    HomePageViewController *tableVC = [[HomePageViewController alloc] init];
+    [self presentViewController:tableVC animated:YES completion:nil];
 }
 @end

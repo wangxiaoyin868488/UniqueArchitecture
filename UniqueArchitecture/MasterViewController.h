@@ -8,9 +8,8 @@
 
 #import <UIKit/UIKit.h>
 
-@class DetailViewController;
-
 @interface MasterViewController : UIViewController
+- (IBAction)action1:(id)sender;
 
 @end
 
