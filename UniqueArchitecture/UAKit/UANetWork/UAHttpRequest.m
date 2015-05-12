@@ -30,13 +30,13 @@
 - (void)setCompletionBlockWithSuccess:(void (^)(UAHttpRequest *request, id responseObject))success
                               failure:(void (^)(UAHttpRequest *request, NSError *error))failure{
     
-    
+    __block UAHttpRequest *weakself = self;
        [_request setCompletionBlockWithSuccess:^(AFHTTPRequestOperation *operation, id responseObject) {
         NSLog(@"JSON: %@", responseObject);
-        success(self,responseObject);
+        success(weakself,responseObject);
     } failure:^(AFHTTPRequestOperation *operation, NSError *error) {
         NSLog(@"Error: %@", error);
-        failure(self,error);
+        failure(weakself,error);
     }];
 
 }
