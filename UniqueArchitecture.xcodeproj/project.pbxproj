@@ -22,6 +22,12 @@
 		898F0A6E1B005D3600091005 /* UAViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 898F0A6B1B005D3600091005 /* UAViewController.m */; };
 		898F0A711B00984C00091005 /* UARequestModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 898F0A701B00984C00091005 /* UARequestModel.m */; };
 		898F0A741B0099A100091005 /* UAHttpRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = 898F0A731B0099A100091005 /* UAHttpRequest.m */; };
+		B039F1EC1B0249B400787C57 /* UADB.m in Sources */ = {isa = PBXBuildFile; fileRef = B039F1EB1B0249B400787C57 /* UADB.m */; };
+		B043BB951B025018001D241B /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B043BB901B025018001D241B /* Default-568h@2x.png */; };
+		B043BB961B025018001D241B /* Default-667h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B043BB911B025018001D241B /* Default-667h@2x.png */; };
+		B043BB971B025018001D241B /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B043BB921B025018001D241B /* Default-736h@3x.png */; };
+		B043BB981B025018001D241B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B043BB931B025018001D241B /* Default.png */; };
+		B043BB991B025018001D241B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B043BB941B025018001D241B /* Default@2x.png */; };
 		C36CE017C60CA86895F481FC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 875F2C0854B807A8A016EC4A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -72,6 +78,14 @@
 		898F0A701B00984C00091005 /* UARequestModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UARequestModel.m; sourceTree = "<group>"; };
 		898F0A721B0099A100091005 /* UAHttpRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UAHttpRequest.h; sourceTree = "<group>"; };
 		898F0A731B0099A100091005 /* UAHttpRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UAHttpRequest.m; sourceTree = "<group>"; };
+		B039F1EA1B0249B400787C57 /* UADB.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UADB.h; sourceTree = "<group>"; };
+		B039F1EB1B0249B400787C57 /* UADB.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UADB.m; sourceTree = "<group>"; };
+		B039F1ED1B024A0700787C57 /* UASingleClass.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UASingleClass.h; sourceTree = "<group>"; };
+		B043BB901B025018001D241B /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
+		B043BB911B025018001D241B /* Default-667h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-667h@2x.png"; sourceTree = "<group>"; };
+		B043BB921B025018001D241B /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
+		B043BB931B025018001D241B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
+		B043BB941B025018001D241B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -137,6 +151,8 @@
 			children = (
 				8971232A1B021BD9009FA77D /* UABaseDao.h */,
 				8971232B1B021BD9009FA77D /* UABaseDao.m */,
+				B039F1EA1B0249B400787C57 /* UADB.h */,
+				B039F1EB1B0249B400787C57 /* UADB.m */,
 			);
 			path = ODBC;
 			sourceTree = "<group>";
@@ -175,6 +191,7 @@
 				897A96131AFC85E800BEEEFB /* LaunchScreen.xib */,
 				897A96011AFC85E700BEEEFB /* Supporting Files */,
 				894D4AA31AFF56AD006F97B2 /* UniqueArchitecture.h */,
+				B043BB8E1B024F4B001D241B /* Resources */,
 			);
 			path = UniqueArchitecture;
 			sourceTree = "<group>";
@@ -213,6 +230,7 @@
 				897123291B021BC3009FA77D /* ODBC */,
 				8966EC7E1AFC8B5B0021CED7 /* UABase */,
 				898F0A621B005CEA00091005 /* UANetWork */,
+				B039F1ED1B024A0700787C57 /* UASingleClass.h */,
 			);
 			path = UAKit;
 			sourceTree = "<group>";
@@ -229,6 +247,27 @@
 				897123271B01C0D9009FA77D /* UASetRequestManager.m */,
 			);
 			path = UANetWork;
+			sourceTree = "<group>";
+		};
+		B043BB8E1B024F4B001D241B /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				B043BB8F1B025018001D241B /* default */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		B043BB8F1B025018001D241B /* default */ = {
+			isa = PBXGroup;
+			children = (
+				B043BB901B025018001D241B /* Default-568h@2x.png */,
+				B043BB911B025018001D241B /* Default-667h@2x.png */,
+				B043BB921B025018001D241B /* Default-736h@3x.png */,
+				B043BB931B025018001D241B /* Default.png */,
+				B043BB941B025018001D241B /* Default@2x.png */,
+			);
+			name = default;
+			path = ../default;
 			sourceTree = "<group>";
 		};
 		B86110592408166335E58220 /* Frameworks */ = {
@@ -330,9 +369,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B043BB991B025018001D241B /* Default@2x.png in Resources */,
 				897A96101AFC85E800BEEEFB /* Main.storyboard in Resources */,
+				B043BB951B025018001D241B /* Default-568h@2x.png in Resources */,
 				897A96151AFC85E800BEEEFB /* LaunchScreen.xib in Resources */,
 				897A96121AFC85E800BEEEFB /* Images.xcassets in Resources */,
+				B043BB981B025018001D241B /* Default.png in Resources */,
+				B043BB961B025018001D241B /* Default-667h@2x.png in Resources */,
+				B043BB971B025018001D241B /* Default-736h@3x.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -386,6 +430,7 @@
 				8971232C1B021BD9009FA77D /* UABaseDao.m in Sources */,
 				897A96071AFC85E800BEEEFB /* AppDelegate.m in Sources */,
 				897A960A1AFC85E800BEEEFB /* MasterViewController.m in Sources */,
+				B039F1EC1B0249B400787C57 /* UADB.m in Sources */,
 				898F0A741B0099A100091005 /* UAHttpRequest.m in Sources */,
 				898F0A6E1B005D3600091005 /* UAViewController.m in Sources */,
 				898F0A711B00984C00091005 /* UARequestModel.m in Sources */,

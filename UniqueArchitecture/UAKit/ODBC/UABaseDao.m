@@ -8,6 +8,7 @@
 
 #import "UABaseDao.h"
 #import <FMDB/FMDB.h>
+#import "UADB.h"
 
 @interface UABaseDao(){
     FMDatabase *_db;
@@ -15,30 +16,10 @@
 
 @end
 
-static UABaseDao *shareInatance = nil;
-
 @implementation UABaseDao
+SYNTHESIZE_SINGLE_CLASS(UABaseDao);
 
-- (instancetype)shareInstance{
-    @synchronized(self){
-        if (shareInatance == nil) {
-            shareInatance = [[UABaseDao alloc] init];
-        }
-    }
-    return shareInatance;
-}
+//odbc
 
-+ (instancetype)allocWithZone:(struct _NSZone *)zone{
-    @synchronized(self){
-        if (shareInatance == nil) {
-            shareInatance = [super allocWithZone:zone];
-        }
-    }
-    return nil;
-}
-
-- (instancetype)copy{
-    return shareInatance;
-}
 
 @end
