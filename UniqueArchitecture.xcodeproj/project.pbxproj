@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		894D4AC91AFF5E17006F97B2 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 894D4AC81AFF5E17006F97B2 /* HomePageViewController.m */; };
 		897123281B01C0D9009FA77D /* UASetRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 897123271B01C0D9009FA77D /* UASetRequestManager.m */; };
+		8971232C1B021BD9009FA77D /* UABaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 8971232B1B021BD9009FA77D /* UABaseDao.m */; };
 		897A96041AFC85E700BEEEFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 897A96031AFC85E700BEEEFB /* main.m */; };
 		897A96071AFC85E800BEEEFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 897A96061AFC85E800BEEEFB /* AppDelegate.m */; };
 		897A960A1AFC85E800BEEEFB /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 897A96091AFC85E800BEEEFB /* MasterViewController.m */; };
@@ -46,6 +47,8 @@
 		897123251B01A723009FA77D /* UANetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UANetWork.h; sourceTree = "<group>"; };
 		897123261B01C0D9009FA77D /* UASetRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UASetRequestManager.h; sourceTree = "<group>"; };
 		897123271B01C0D9009FA77D /* UASetRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UASetRequestManager.m; sourceTree = "<group>"; };
+		8971232A1B021BD9009FA77D /* UABaseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UABaseDao.h; sourceTree = "<group>"; };
+		8971232B1B021BD9009FA77D /* UABaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UABaseDao.m; sourceTree = "<group>"; };
 		897A95FE1AFC85E700BEEEFB /* UniqueArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniqueArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		897A96021AFC85E700BEEEFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		897A96031AFC85E700BEEEFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -129,6 +132,15 @@
 			name = UAViewController;
 			sourceTree = "<group>";
 		};
+		897123291B021BC3009FA77D /* ODBC */ = {
+			isa = PBXGroup;
+			children = (
+				8971232A1B021BD9009FA77D /* UABaseDao.h */,
+				8971232B1B021BD9009FA77D /* UABaseDao.m */,
+			);
+			path = ODBC;
+			sourceTree = "<group>";
+		};
 		897A95F51AFC85E700BEEEFB = {
 			isa = PBXGroup;
 			children = (
@@ -198,6 +210,7 @@
 		898F0A5A1B005CEA00091005 /* UAKit */ = {
 			isa = PBXGroup;
 			children = (
+				897123291B021BC3009FA77D /* ODBC */,
 				8966EC7E1AFC8B5B0021CED7 /* UABase */,
 				898F0A621B005CEA00091005 /* UANetWork */,
 			);
@@ -370,6 +383,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8971232C1B021BD9009FA77D /* UABaseDao.m in Sources */,
 				897A96071AFC85E800BEEEFB /* AppDelegate.m in Sources */,
 				897A960A1AFC85E800BEEEFB /* MasterViewController.m in Sources */,
 				898F0A741B0099A100091005 /* UAHttpRequest.m in Sources */,
