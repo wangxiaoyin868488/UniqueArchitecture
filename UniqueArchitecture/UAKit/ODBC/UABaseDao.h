@@ -21,7 +21,7 @@
  *
  *  @return bool
  */
-- (BOOL)insertWithDictionary:(NSDictionary *)params;
+- (void)insertWithDictionary:(NSDictionary *)params;
 
 /**
  *  删除数据
@@ -31,7 +31,7 @@
  *
  *  @return bool
  */
-- (BOOL)deleteWithSql:(NSString *)sql andDictionary:(NSDictionary *)params;
+- (void)deleteWithSql:(NSString *)sql andDictionary:(NSDictionary *)params;
 
 /**
  *  更新
@@ -41,7 +41,7 @@
  *
  *  @return bool
  */
-- (BOOL)updateWithSql:(NSString *)sql andDictionary:(NSDictionary *)params;
+- (void)updateWithSql:(NSString *)sql andDictionary:(NSDictionary *)params;
 
 /**
  *  查询

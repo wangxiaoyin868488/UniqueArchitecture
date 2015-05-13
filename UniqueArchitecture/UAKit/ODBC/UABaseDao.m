@@ -11,7 +11,7 @@
 #import "UADB.h"
 
 @interface UABaseDao(){
-    FMDatabase *_db;
+    FMDatabaseQueue *_db;
 }
 
 @end
@@ -28,9 +28,9 @@
     return self;
 }
 
-- (BOOL)insertWithDictionary:(NSDictionary *)params{
+- (void)insertWithDictionary:(NSDictionary *)params{
     if (! [params count] > 0) {
-        return NO;
+        return;
     }
     
     NSMutableString *sql = [[NSMutableString alloc] initWithFormat:@"insert into %@(",self.tableName];
@@ -45,50 +45,73 @@
     [sql replaceCharactersInRange:NSMakeRange(sql.length-1, 1) withString:@")"];
     [param replaceCharactersInRange:NSMakeRange(param.length-1, 1) withString:@")"];
     [sql appendString:param];
-    [_db executeUpdate:sql withParameterDictionary:params];
-    if ([_db hadError]) {
-        NSLog(@"%@ , %@",[_db lastError],[_db lastErrorMessage]);
-        return NO;
-    }
-    return YES;
+    [_db inTransaction:^(FMDatabase *db, BOOL *rollback){
+        [db open];
+        [db executeUpdate:sql withParameterDictionary:params];
+        if ([db hadError]) {
+            DBGLog(@"%@ , %@",[db lastError],[db lastErrorMessage]);
+        }
+        [db close];
+    }];
+    
+    return;
 }
 
-- (BOOL)deleteWithSql:(NSString *)sql andDictionary:(NSDictionary *)params{
+- (void)deleteWithSql:(NSString *)sql andDictionary:(NSDictionary *)params{
     if (sql) {
         if ([params count] > 0) {
-            [_db executeUpdate:sql withParameterDictionary:params];
+            [_db inTransaction:^(FMDatabase *db, BOOL *rollback){
+                [db open];
+                [db executeUpdate:sql withParameterDictionary:params];
+                if ([db hadError]) {
+                    DBGLog(@"%@ , %@",[db lastError],[db lastErrorMessage]);
+                }
+                [db close];
+            }];
         }else{
-            [_db executeUpdate:sql];
+            [_db inTransaction:^(FMDatabase *db, BOOL *rollback){
+                [db open];
+                [db executeUpdate:sql withParameterDictionary:params];
+                if ([db hadError]) {
+                    DBGLog(@"%@ , %@",[db lastError],[db lastErrorMessage]);
+                }
+                [db close];
+            }];
         }
-        if ([_db hadError]) {
-            NSLog(@"%@ , %@",[_db lastError],[_db lastErrorMessage]);
-            return NO;
-        }
-        return YES;
     }
-    return NO;
 }
 
-- (BOOL)updateWithSql:(NSString *)sql andDictionary:(NSDictionary *)params{
+- (void)updateWithSql:(NSString *)sql andDictionary:(NSDictionary *)params{
     if (sql) {
         if ([params count] > 0) {
-            [_db executeUpdate:sql withParameterDictionary:params];
+            [_db inTransaction:^(FMDatabase *db, BOOL *rollback){
+                [db open];
+                [db executeUpdate:sql withParameterDictionary:params];
+                if ([db hadError]) {
+                    DBGLog(@"%@ , %@",[db lastError],[db lastErrorMessage]);
+                }
+                [db close];
+            }];
         }else{
-            [_db executeUpdate:sql];
+            [_db inTransaction:^(FMDatabase *db, BOOL *rollback){
+                [db open];
+                [db executeUpdate:sql withParameterDictionary:params];
+                if ([db hadError]) {
+                    DBGLog(@"%@ , %@",[db lastError],[db lastErrorMessage]);
+                }
+                [db close];
+            }];
         }
-        if ([_db hadError]) {
-            NSLog(@"%@ , %@",[_db lastError],[_db lastErrorMessage]);
-            return NO;
-        }
-        return YES;
     }
-    return NO;
 }
 
 - (NSArray *)queryWithSql:(NSString *)sql{
+//    FMResultSet *sets = nil;
     if (sql) {
-        
+//        sets = [_db executeQuery:sql];
     }
+    NSArray *array;
+    return array;
 }
 
 @end

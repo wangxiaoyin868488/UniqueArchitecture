@@ -11,7 +11,7 @@
 #define DB_NAME @"db"
 
 @interface UADB (){
-    FMDatabase *_db;
+    FMDatabaseQueue *_db;
 }
 
 @end
@@ -29,21 +29,21 @@ SYNTHESIZE_SINGLE_CLASS(UADB);
 }
 
 - (void) open{
-    BOOL success;
+//    BOOL success;
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentDirectory = [paths objectAtIndex:0];
     NSString *DBPath = [documentDirectory stringByAppendingPathComponent:DB_NAME];
     
     if (_db == nil) {
-        _db = [FMDatabase databaseWithPath:DBPath];
+        _db = [FMDatabaseQueue databaseQueueWithPath:DBPath];
         
-        if ([_db open]) {
-            [_db setShouldCacheStatements:YES];
-            DBGLog(@"Open success db !");
-        }else {
-            DBGLog(@"Failed to open db!");
-            success = NO;
-        }
+//        if ([_db open]) {
+//            [_db setShouldCacheStatements:YES];
+//            DBGLog(@"Open success db !");
+//        }else {
+//            DBGLog(@"Failed to open db!");
+//            success = NO;
+//        }
     }
 }
 
@@ -51,7 +51,7 @@ SYNTHESIZE_SINGLE_CLASS(UADB);
     [_db close];
 }
 
-- (FMDatabase *) getDB{
+- (FMDatabaseQueue *) getDB{
     return _db;
 }
 @end
