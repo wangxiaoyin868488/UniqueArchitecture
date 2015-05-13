@@ -29,7 +29,66 @@
 }
 
 - (BOOL)insertWithDictionary:(NSDictionary *)params{
+    if (! [params count] > 0) {
+        return NO;
+    }
+    
+    NSMutableString *sql = [[NSMutableString alloc] initWithString:@"insert into %@(",self.tableName];
+    NSMutableString *param = [[NSMutableString alloc] initWithString:@"values("];
+    NSArray *keys = [params allKeys];
+    
+    for (NSString * key in keys) {
+        [sql appendString:@"%@,",key];
+        [param appendString:@"%@,",[params objectForKey:key]];
+    }
+    
+    [sql replaceCharactersInRange:NSMakeRange(sql.length-1, 1) withString:@")"];
+    [param replaceCharactersInRange:NSMakeRange(param.length-1, 1) withString:@")"];
+    [sql appendString:param];
+    [_db executeUpdate:sql withParameterDictionary:params]
+    if ([_db hadError]) {
+        NSLog(@"%@ , %@",[_db lastErrorCode],[_db lastErrorMessage]);
+        return NO;
+    }
     return YES;
+}
+
+- (BOOL)deleteWithSql:(NSString *)sql andDictionary:(NSDictionary *)params{
+    if (sql) {
+        if ([params count] > 0) {
+            [_db executeUpdate:sql withParameterDictionary:params];
+        }else{
+            [_db executeUpdate:sql];
+        }
+        if ([_db hadError]) {
+            NSLog(@"%@ , %@",[_db lastErrorCode],[_db lastErrorMessage]);
+            return NO;
+        }
+        return YES;
+    }
+    return NO;
+}
+
+- (BOOL)updateWithSql:(NSString *)sql andDictionary:(NSDictionary *)params{
+    if (sql) {
+        if ([params count] > 0) {
+            [_db executeUpdate:sql withParameterDictionary:params];
+        }else{
+            [_db executeUpdate:sql];
+        }
+        if ([_db hadError]) {
+            NSLog(@"%@ , %@",[_db lastErrorCode],[_db lastErrorMessage]);
+            return NO;
+        }
+        return YES;
+    }
+    return NO;
+}
+
+- (NSArray *)queryWithSql:(NSString *)sql{
+    if (sql) {
+        
+    }
 }
 
 @end

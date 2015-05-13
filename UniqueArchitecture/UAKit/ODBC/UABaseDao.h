@@ -50,6 +50,6 @@
  *
  *  @return bool
  */
-- (BOOL)queryWithSql:(NSString *)sql;
+- (NSArray *)queryWithSql:(NSString *)sql;
 
 @end
