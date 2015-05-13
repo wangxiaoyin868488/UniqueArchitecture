@@ -8,6 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		894D4AC91AFF5E17006F97B2 /* HomePageViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 894D4AC81AFF5E17006F97B2 /* HomePageViewController.m */; };
+		8956FBB31B03378B00D97CE1 /* PathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8956FBB21B03378B00D97CE1 /* PathHelper.m */; };
 		897123281B01C0D9009FA77D /* UASetRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 897123271B01C0D9009FA77D /* UASetRequestManager.m */; };
 		8971232C1B021BD9009FA77D /* UABaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 8971232B1B021BD9009FA77D /* UABaseDao.m */; };
 		897A96041AFC85E700BEEEFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 897A96031AFC85E700BEEEFB /* main.m */; };
@@ -50,6 +51,8 @@
 		894D4AA31AFF56AD006F97B2 /* UniqueArchitecture.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UniqueArchitecture.h; sourceTree = "<group>"; };
 		894D4AC71AFF5E17006F97B2 /* HomePageViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomePageViewController.h; sourceTree = "<group>"; };
 		894D4AC81AFF5E17006F97B2 /* HomePageViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomePageViewController.m; sourceTree = "<group>"; };
+		8956FBB11B03378B00D97CE1 /* PathHelper.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PathHelper.h; sourceTree = "<group>"; };
+		8956FBB21B03378B00D97CE1 /* PathHelper.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PathHelper.m; sourceTree = "<group>"; };
 		897123251B01A723009FA77D /* UANetWork.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UANetWork.h; sourceTree = "<group>"; };
 		897123261B01C0D9009FA77D /* UASetRequestManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UASetRequestManager.h; sourceTree = "<group>"; };
 		897123271B01C0D9009FA77D /* UASetRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UASetRequestManager.m; sourceTree = "<group>"; };
@@ -122,6 +125,15 @@
 				894D4AC81AFF5E17006F97B2 /* HomePageViewController.m */,
 			);
 			name = HomePage;
+			sourceTree = "<group>";
+		};
+		8956FBB01B03377700D97CE1 /* PathHelper */ = {
+			isa = PBXGroup;
+			children = (
+				8956FBB11B03378B00D97CE1 /* PathHelper.h */,
+				8956FBB21B03378B00D97CE1 /* PathHelper.m */,
+			);
+			path = PathHelper;
 			sourceTree = "<group>";
 		};
 		8966EC7E1AFC8B5B0021CED7 /* UABase */ = {
@@ -227,6 +239,7 @@
 		898F0A5A1B005CEA00091005 /* UAKit */ = {
 			isa = PBXGroup;
 			children = (
+				8956FBB01B03377700D97CE1 /* PathHelper */,
 				897123291B021BC3009FA77D /* ODBC */,
 				8966EC7E1AFC8B5B0021CED7 /* UABase */,
 				898F0A621B005CEA00091005 /* UANetWork */,
@@ -427,6 +440,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				8956FBB31B03378B00D97CE1 /* PathHelper.m in Sources */,
 				8971232C1B021BD9009FA77D /* UABaseDao.m in Sources */,
 				897A96071AFC85E800BEEEFB /* AppDelegate.m in Sources */,
 				897A960A1AFC85E800BEEEFB /* MasterViewController.m in Sources */,

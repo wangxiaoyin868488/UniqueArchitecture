@@ -8,12 +8,48 @@
 
 #import <Foundation/Foundation.h>
 
-@interface UABaseDao : NSObject
+@interface UABaseDao : NSObject{
+    
+}
 
-- (instancetype)shareInstance;
+@property (nonatomic,retain)NSString *tableName;
 
-//init db
-//create table
-//insert delete update select
+/**
+ *  插入操作
+ *
+ *  @param params 参数
+ *
+ *  @return bool
+ */
+- (BOOL)insertWithDictionary:(NSDictionary *)params;
+
+/**
+ *  删除数据
+ *
+ *  @param sql    sql语句
+ *  @param params 参数
+ *
+ *  @return bool
+ */
+- (BOOL)deleteWithSql:(NSString *)sql andDictionary:(NSDictionary *)params;
+
+/**
+ *  更新
+ *
+ *  @param sql    sql语句
+ *  @param params 参数
+ *
+ *  @return bool
+ */
+- (BOOL)updateWithSql:(NSString *)sql andDictionary:(NSDictionary *)params;
+
+/**
+ *  查询
+ *
+ *  @param sql sql语句
+ *
+ *  @return bool
+ */
+- (BOOL)queryWithSql:(NSString *)sql;
 
 @end

@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 
 @interface MasterViewController : UIViewController
+
 - (IBAction)action1:(id)sender;
 
 @end

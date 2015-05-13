@@ -17,9 +17,19 @@
 @end
 
 @implementation UABaseDao
-SYNTHESIZE_SINGLE_CLASS(UABaseDao);
 
-//odbc
+- (instancetype)init{
+    self = [super init];
+    
+    if (self) {
+        //
+        _db = [[UADB shareInstance] getDB];
+    }
+    return self;
+}
 
+- (BOOL)insertWithDictionary:(NSDictionary *)params{
+    return YES;
+}
 
 @end

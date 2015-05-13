@@ -17,6 +17,7 @@
 @end
 
 @implementation UADB
+SYNTHESIZE_SINGLE_CLASS(UADB);
 
 - (instancetype)init{
     self = [super init];

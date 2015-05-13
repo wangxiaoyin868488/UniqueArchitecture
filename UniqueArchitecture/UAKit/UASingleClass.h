@@ -9,7 +9,7 @@
 #define SYNTHESIZE_SINGLE_CLASS(classname)\
 static classname *shareInatance = nil;\
 \
-- (instancetype)shareInstance{\
++ (instancetype)shareInstance{\
     @synchronized(self){\
         if (shareInatance == nil) {\
             shareInatance = [[classname alloc] init];\

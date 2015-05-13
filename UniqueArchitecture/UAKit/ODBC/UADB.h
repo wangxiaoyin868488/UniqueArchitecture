@@ -16,7 +16,7 @@
  *
  *  @return 实例对象
  */
-//- (instancetype)shareInstance;
++ (instancetype)shareInstance;
 
 
 /*!

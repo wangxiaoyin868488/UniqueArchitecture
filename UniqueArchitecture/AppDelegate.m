@@ -7,6 +7,7 @@
 //
 
 #import "AppDelegate.h"
+#import "UADB.h"
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
@@ -16,7 +17,8 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+    
+    [[UADB shareInstance] open];
     return YES;
 }
 
