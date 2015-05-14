@@ -22,9 +22,6 @@
     [super viewDidLoad];
     // Do any additional setup after loading the view, typically from a nib.
     self.navigationItem.leftBarButtonItem = self.editButtonItem;
-
-    NSArray *array = [NSArray arrayWithObjects:@"1",@"2",@"3",@"4", nil];
-    
    
 }
 
