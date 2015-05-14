@@ -31,6 +31,7 @@
 		B043BB971B025018001D241B /* Default-736h@3x.png in Resources */ = {isa = PBXBuildFile; fileRef = B043BB921B025018001D241B /* Default-736h@3x.png */; };
 		B043BB981B025018001D241B /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = B043BB931B025018001D241B /* Default.png */; };
 		B043BB991B025018001D241B /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = B043BB941B025018001D241B /* Default@2x.png */; };
+		B04AB9311B04E0BE008863E4 /* UANewWebViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = B04AB9301B04E0BE008863E4 /* UANewWebViewController.m */; };
 		C36CE017C60CA86895F481FC /* libPods.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 875F2C0854B807A8A016EC4A /* libPods.a */; };
 /* End PBXBuildFile section */
 
@@ -95,6 +96,8 @@
 		B043BB921B025018001D241B /* Default-736h@3x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-736h@3x.png"; sourceTree = "<group>"; };
 		B043BB931B025018001D241B /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		B043BB941B025018001D241B /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
+		B04AB92F1B04E0BE008863E4 /* UANewWebViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UANewWebViewController.h; sourceTree = SOURCE_ROOT; };
+		B04AB9301B04E0BE008863E4 /* UANewWebViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UANewWebViewController.m; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -162,6 +165,8 @@
 				898F0A691B005D3600091005 /* UATableViewController.m */,
 				898F0A6A1B005D3600091005 /* UAViewController.h */,
 				898F0A6B1B005D3600091005 /* UAViewController.m */,
+				B04AB92F1B04E0BE008863E4 /* UANewWebViewController.h */,
+				B04AB9301B04E0BE008863E4 /* UANewWebViewController.m */,
 			);
 			name = UAViewController;
 			sourceTree = "<group>";
@@ -466,6 +471,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B04AB9311B04E0BE008863E4 /* UANewWebViewController.m in Sources */,
 				8956FBB31B03378B00D97CE1 /* PathHelper.m in Sources */,
 				8971232C1B021BD9009FA77D /* UABaseDao.m in Sources */,
 				897A96071AFC85E800BEEEFB /* AppDelegate.m in Sources */,
