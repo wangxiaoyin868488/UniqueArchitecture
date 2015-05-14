@@ -43,13 +43,12 @@ static UADB *shareInatance = nil;
     return shareInatance;
 }
 
-
-
 - (instancetype)init{
     self = [super init];
     
     if (self) {
         //
+        [self open];
     }
     return self;
 }
@@ -59,8 +58,8 @@ static UADB *shareInatance = nil;
     NSString *documentDirectory = [paths objectAtIndex:0];
     NSString *DBPath = [documentDirectory stringByAppendingPathComponent:DB_NAME];
     DBGLog(@"%@",DBPath);
-    if (_db == nil) {
-        _db = [FMDatabaseQueue databaseQueueWithPath:DBPath];
+    if (_databaseQueue == nil) {
+        _databaseQueue = [FMDatabaseQueue databaseQueueWithPath:DBPath];
     }
 }
 

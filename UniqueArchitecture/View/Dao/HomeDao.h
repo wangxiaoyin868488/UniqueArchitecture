@@ -31,7 +31,7 @@
  *
  *  return void
  */
-- (void)updateWithNews:(NSString *)news andID:(NSString *)Id;
+- (void)updateWithNews:(News *)news andID:(NSString *)Id;
 
 /**
  *  delete news

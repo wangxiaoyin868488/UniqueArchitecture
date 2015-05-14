@@ -21,30 +21,14 @@
     
     if (self) {
         //
-        _databasebQueue = [[UADB shareInstance] getDB];
+        _databasebQueue = [[UADB shareInstance] getDBQueue];
     }
     return self;
 }
 
 - (void)insertWithSql:(NSString *)sql{
-//    if (! [params count] > 0) {
-//        return;
-//    }
-//    
-//    NSMutableString *sql = [[NSMutableString alloc] initWithFormat:@"insert into %@(",self.tableName];
-//    NSMutableString *param = [[NSMutableString alloc] initWithString:@"values("];
-//    NSArray *keys = [params allKeys];
-//    
-//    for (NSString * key in keys) {
-//        [sql appendFormat:@"%@,",key];
-//        [param appendFormat:@"%@,",[params objectForKey:key]];
-//    }
-//    
-//    [sql replaceCharactersInRange:NSMakeRange(sql.length-1, 1) withString:@")"];
-//    [param replaceCharactersInRange:NSMakeRange(param.length-1, 1) withString:@")"];
-//    [sql appendString:param];
     [_databasebQueue inTransaction:^(FMDatabase *db, BOOL *rollback){
-        boo res = [db executeUpdate:sql,nil];
+        BOOL res = [db executeUpdate:sql,nil];
         if (! res) {
             DBGLog(@"%@ , %@",[db lastError],[db lastErrorMessage]);
         }
@@ -72,7 +56,7 @@
 }
 
 - (FMResultSet *)queryWithSql:(NSString *)sql{
-    FMResultSet *sets = nil;
+    __block FMResultSet *sets = nil;
     [_databasebQueue inTransaction:^(FMDatabase *db, BOOL *rollback){
         sets = [db executeQuery:sql];
         if (![sets columnCount] > 0) {

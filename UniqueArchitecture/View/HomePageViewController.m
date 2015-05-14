@@ -22,7 +22,10 @@
     NSLog(@"%@",documentDirectory);
     HomeDao *dao = [[HomeDao alloc] init];
     
-    [dao insertWithDictionary:@{@"name":@"1",@"sid":@"2"}];
+    News *news = [[News alloc] init];
+    news.city = @"sh";
+    news.time = @"123";
+    [dao insertWithNews:news];
 }
 
 - (void)dropViewDidBeginRefreshing:(id)sender{

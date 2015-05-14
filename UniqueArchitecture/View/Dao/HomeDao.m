@@ -34,13 +34,13 @@
     [self insertWithSql:sql];
 }
 
-- (void)updateWithNews:(NSString *)news andID:(NSString *)Id{
-    NSString *sql = [NSString stringWithFormat:@"update %@ set name=%@,sid=%@ where id=%@",self.tableName,new.city,Id];
+- (void)updateWithNews:(News *)news andID:(NSString *)Id{
+    NSString *sql = [NSString stringWithFormat:@"update %@ set name=%@,sid=%@ where id=%d",self.tableName,news.city,news.time,[Id intValue]];
     [self updateWithSql:sql withArgumentsInArray:nil];
 }
 
 - (void)deleteNewsWithId:(NSString *)Id{
-    NSString *sql = [NSString stringWithFormat:@"delete from %@ where id=%@",Id];
+    NSString *sql = [NSString stringWithFormat:@"delete from %@ where id=%d",self.tableName,[Id intValue]];
     [self deleteWithSql:sql andDictionary:nil];
 }
 @end
