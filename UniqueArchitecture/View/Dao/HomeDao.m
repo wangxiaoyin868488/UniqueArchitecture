@@ -16,6 +16,7 @@
     if (self) {
         //
         self.tableName = HOME_TABLE_NAME;
+        self.modelName = @"News";
         [self checkTable];
     }
     return self;
@@ -25,12 +26,21 @@
 
 - (void)checkTable{
     NSString *createTable = [NSString stringWithFormat:@"CREATE TABLE if not exists %@ ('id' INTEGER PRIMARY KEY  NOT NULL ,'name' TEXT,'sid' TEXT)", self.tableName];
-    [self.db inDatabase:^(FMDatabase *db){
-        BOOL res = [db executeUpdate:createTable];
-        if (!res){
-            DBGLog(@"%@ , %@",[db lastError],[db lastErrorMessage]);
-        }
-    }];    
+    [self checkTableAvaiableWithSql:createTable];
 }
 
+- (void)insertWithNews:(News *)news{
+    NSString *sql = [NSString stringWithFormat:@"insert into %@(name,sid)vaues(%@,%@)",self.tableName,news.city,news.time];
+    [self insertWithSql:sql];
+}
+
+- (void)updateWithNews:(NSString *)news andID:(NSString *)Id{
+    NSString *sql = [NSString stringWithFormat:@"update %@ set name=%@,sid=%@ where id=%@",self.tableName,new.city,Id];
+    [self updateWithSql:sql withArgumentsInArray:nil];
+}
+
+- (void)deleteNewsWithId:(NSString *)Id{
+    NSString *sql = [NSString stringWithFormat:@"delete from %@ where id=%@",Id];
+    [self deleteWithSql:sql andDictionary:nil];
+}
 @end

@@ -11,7 +11,7 @@
 #define DB_NAME @"db.sqlite"
 
 @interface UADB (){
-    FMDatabaseQueue *_db;
+    FMDatabaseQueue *_databaseQueue;
 }
 
 @end
@@ -30,14 +30,14 @@ static UADB *shareInatance = nil;
     return shareInatance;
 }
 
-//+ (instancetype)allocWithZone:(struct _NSZone *)zone{
-//    @synchronized(self){
-//        if (shareInatance == nil) {
-//            shareInatance = [super allocWithZone:zone];
-//        }
-//    }
-//    return nil;
-//}
++ (instancetype)allocWithZone:(struct _NSZone *)zone{
+    @synchronized(self){
+        if (shareInatance == nil) {
+            shareInatance = [super allocWithZone:zone];
+        }
+    }
+    return shareInatance;
+}
 
 - (instancetype)copy{
     return shareInatance;
@@ -65,10 +65,10 @@ static UADB *shareInatance = nil;
 }
 
 - (void) close{
-    [_db close];
+    [_databaseQueue close];
 }
 
-- (FMDatabaseQueue *) getDB{
-    return _db;
+- (FMDatabaseQueue *) getDBQueue{
+    return _databaseQueue;
 }
 @end

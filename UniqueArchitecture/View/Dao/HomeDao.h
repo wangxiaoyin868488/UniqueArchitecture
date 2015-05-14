@@ -7,9 +7,39 @@
 //
 
 #import "UABaseDao.h"
+#import "News.h"
 
-#define HOME_TABLE_NAME @"indexTable"
+#define HOME_TABLE_NAME @"newsTable"
 
 @interface HomeDao : UABaseDao
+
+//dao层基本四像素操作 model : insert updata delete
+
+/**
+ *  插入news
+ *
+ *  @param news 实例对象
+ *
+ *  return void
+ */
+- (void)insertWithNews:(News *)news;
+
+/**
+ *  update news
+ *
+ *  @param Id id
+ *
+ *  return void
+ */
+- (void)updateWithNews:(NSString *)news andID:(NSString *)Id;
+
+/**
+ *  delete news
+ *
+ *  @param Id id
+ *
+ *  return void
+ */
+- (void)deleteNewsWithId:(NSString *)Id;
 
 @end

@@ -42,7 +42,7 @@
  *
  *  @since 3.6.1
  */
-- (FMDatabaseQueue *) getDB;
+- (FMDatabaseQueue *) getDBQueue;
 
 
 @end

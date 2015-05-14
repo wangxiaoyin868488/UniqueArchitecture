@@ -13,16 +13,17 @@
 }
 
 @property (nonatomic,retain) NSString         *tableName;
-@property (nonatomic,retain) FMDatabaseQueue  *db;
+@property (nonatomic,retain) NSString         *modelName;
+@property (nonatomic,retain) FMDatabaseQueue  *databasebQueue;
 
 /**
  *  插入操作
  *
  *  @param params 参数
  *
- *  @return bool
+ *  @return void
  */
-- (void)insertWithDictionary:(NSDictionary *)params;
+- (void)insertWithSql:(NSString *)sql;
 
 /**
  *  删除数据
@@ -30,27 +31,34 @@
  *  @param sql    sql语句
  *  @param params 参数
  *
- *  @return bool
+ *  @return void
  */
 - (void)deleteWithSql:(NSString *)sql andDictionary:(NSDictionary *)params;
-
 /**
  *  更新
  *
  *  @param sql    sql语句
  *  @param params 参数
  *
- *  @return bool
+ *  @return void
  */
-- (void)updateWithSql:(NSString *)sql andDictionary:(NSDictionary *)params;
+- (void)updateWithSql:(NSString *)sql withArgumentsInArray:(NSArray *)array;
 
 /**
  *  查询
  *
  *  @param sql sql语句
  *
- *  @return bool
+ *  @return void
  */
-- (NSArray *)queryWithSql:(NSString *)sql;
+- (FMResultSet *)queryWithSql:(NSString *)sql;
 
+/**
+ *  检查表是否存在
+ *
+ *  @param sql SQL语句
+ *
+ *  return void
+ */
+- (void)checkTableAvaiableWithSql:(NSString *)sql;
 @end
