@@ -12,7 +12,8 @@
     
 }
 
-@property (nonatomic,retain)NSString *tableName;
+@property (nonatomic,retain) NSString         *tableName;
+@property (nonatomic,retain) FMDatabaseQueue  *db;
 
 /**
  *  插入操作

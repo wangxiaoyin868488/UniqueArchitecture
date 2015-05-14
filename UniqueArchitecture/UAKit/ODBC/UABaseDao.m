@@ -11,7 +11,7 @@
 #import "UADB.h"
 
 @interface UABaseDao(){
-    FMDatabaseQueue *_db;
+    UADB *db1;
 }
 
 @end
@@ -23,6 +23,8 @@
     
     if (self) {
         //
+        db1 = [UADB shareInstance];
+        [[UADB shareInstance] open];
         _db = [[UADB shareInstance] getDB];
     }
     return self;
@@ -46,12 +48,10 @@
     [param replaceCharactersInRange:NSMakeRange(param.length-1, 1) withString:@")"];
     [sql appendString:param];
     [_db inTransaction:^(FMDatabase *db, BOOL *rollback){
-        [db open];
-        [db executeUpdate:sql withParameterDictionary:params];
+        [db executeUpdate:sql,nil];
         if ([db hadError]) {
             DBGLog(@"%@ , %@",[db lastError],[db lastErrorMessage]);
         }
-        [db close];
     }];
     
     return;
@@ -61,21 +61,17 @@
     if (sql) {
         if ([params count] > 0) {
             [_db inTransaction:^(FMDatabase *db, BOOL *rollback){
-                [db open];
                 [db executeUpdate:sql withParameterDictionary:params];
                 if ([db hadError]) {
                     DBGLog(@"%@ , %@",[db lastError],[db lastErrorMessage]);
                 }
-                [db close];
             }];
         }else{
             [_db inTransaction:^(FMDatabase *db, BOOL *rollback){
-                [db open];
                 [db executeUpdate:sql withParameterDictionary:params];
                 if ([db hadError]) {
                     DBGLog(@"%@ , %@",[db lastError],[db lastErrorMessage]);
                 }
-                [db close];
             }];
         }
     }
@@ -85,21 +81,17 @@
     if (sql) {
         if ([params count] > 0) {
             [_db inTransaction:^(FMDatabase *db, BOOL *rollback){
-                [db open];
                 [db executeUpdate:sql withParameterDictionary:params];
                 if ([db hadError]) {
                     DBGLog(@"%@ , %@",[db lastError],[db lastErrorMessage]);
                 }
-                [db close];
             }];
         }else{
             [_db inTransaction:^(FMDatabase *db, BOOL *rollback){
-                [db open];
                 [db executeUpdate:sql withParameterDictionary:params];
                 if ([db hadError]) {
                     DBGLog(@"%@ , %@",[db lastError],[db lastErrorMessage]);
                 }
-                [db close];
             }];
         }
     }

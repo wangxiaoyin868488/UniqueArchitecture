@@ -5,10 +5,10 @@
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="7520"/>
     </dependencies>
     <scenes>
-        <!--Master View Controller-->
+        <!--Home Page View Controller-->
         <scene sceneID="9mg-66-rtE">
             <objects>
-                <viewController id="Owr-Am-Hbk" customClass="MasterViewController" sceneMemberID="viewController">
+                <viewController id="Owr-Am-Hbk" customClass="HomePageViewController" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="HVb-Dx-mcF">
                         <rect key="frame" x="0.0" y="0.0" width="320" height="568"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -19,9 +19,6 @@
                                 <state key="normal" title="Button">
                                     <color key="titleShadowColor" white="0.5" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
-                                <connections>
-                                    <action selector="action1:" destination="Owr-Am-Hbk" eventType="touchUpInside" id="XqX-dQ-apR"/>
-                                </connections>
                             </button>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>

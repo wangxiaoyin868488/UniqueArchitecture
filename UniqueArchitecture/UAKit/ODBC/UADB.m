@@ -8,7 +8,7 @@
 
 #import "UADB.h"
 
-#define DB_NAME @"db"
+#define DB_NAME @"db.sqlite"
 
 @interface UADB (){
     FMDatabaseQueue *_db;
@@ -17,7 +17,33 @@
 @end
 
 @implementation UADB
-SYNTHESIZE_SINGLE_CLASS(UADB);
+//SYNTHESIZE_SINGLE_CLASS(UADB);
+
+static UADB *shareInatance = nil;
+
++ (instancetype)shareInstance{
+    @synchronized(self){
+        if (shareInatance == nil) {
+            shareInatance = [[UADB alloc] init];
+        }
+    }
+    return shareInatance;
+}
+
+//+ (instancetype)allocWithZone:(struct _NSZone *)zone{
+//    @synchronized(self){
+//        if (shareInatance == nil) {
+//            shareInatance = [super allocWithZone:zone];
+//        }
+//    }
+//    return nil;
+//}
+
+- (instancetype)copy{
+    return shareInatance;
+}
+
+
 
 - (instancetype)init{
     self = [super init];
@@ -28,22 +54,13 @@ SYNTHESIZE_SINGLE_CLASS(UADB);
     return self;
 }
 
-- (void) open{
-//    BOOL success;
+- (void)open{
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentDirectory = [paths objectAtIndex:0];
     NSString *DBPath = [documentDirectory stringByAppendingPathComponent:DB_NAME];
-    
+    DBGLog(@"%@",DBPath);
     if (_db == nil) {
         _db = [FMDatabaseQueue databaseQueueWithPath:DBPath];
-        
-//        if ([_db open]) {
-//            [_db setShouldCacheStatements:YES];
-//            DBGLog(@"Open success db !");
-//        }else {
-//            DBGLog(@"Failed to open db!");
-//            success = NO;
-//        }
     }
 }
 

@@ -11,6 +11,8 @@
 		8956FBB31B03378B00D97CE1 /* PathHelper.m in Sources */ = {isa = PBXBuildFile; fileRef = 8956FBB21B03378B00D97CE1 /* PathHelper.m */; };
 		897123281B01C0D9009FA77D /* UASetRequestManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 897123271B01C0D9009FA77D /* UASetRequestManager.m */; };
 		8971232C1B021BD9009FA77D /* UABaseDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 8971232B1B021BD9009FA77D /* UABaseDao.m */; };
+		897600C61B045E8700A32F4F /* HomeDao.m in Sources */ = {isa = PBXBuildFile; fileRef = 897600C51B045E8700A32F4F /* HomeDao.m */; };
+		897600CA1B04776300A32F4F /* News.m in Sources */ = {isa = PBXBuildFile; fileRef = 897600C91B04776300A32F4F /* News.m */; };
 		897A96041AFC85E700BEEEFB /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 897A96031AFC85E700BEEEFB /* main.m */; };
 		897A96071AFC85E800BEEEFB /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 897A96061AFC85E800BEEEFB /* AppDelegate.m */; };
 		897A960A1AFC85E800BEEEFB /* MasterViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 897A96091AFC85E800BEEEFB /* MasterViewController.m */; };
@@ -58,6 +60,10 @@
 		897123271B01C0D9009FA77D /* UASetRequestManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UASetRequestManager.m; sourceTree = "<group>"; };
 		8971232A1B021BD9009FA77D /* UABaseDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = UABaseDao.h; sourceTree = "<group>"; };
 		8971232B1B021BD9009FA77D /* UABaseDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = UABaseDao.m; sourceTree = "<group>"; };
+		897600C41B045E8700A32F4F /* HomeDao.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = HomeDao.h; sourceTree = "<group>"; };
+		897600C51B045E8700A32F4F /* HomeDao.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = HomeDao.m; sourceTree = "<group>"; };
+		897600C81B04776300A32F4F /* News.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = News.h; sourceTree = "<group>"; };
+		897600C91B04776300A32F4F /* News.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = News.m; sourceTree = "<group>"; };
 		897A95FE1AFC85E700BEEEFB /* UniqueArchitecture.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = UniqueArchitecture.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		897A96021AFC85E700BEEEFB /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		897A96031AFC85E700BEEEFB /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
@@ -121,6 +127,8 @@
 		894D4AC61AFF5DF1006F97B2 /* HomePage */ = {
 			isa = PBXGroup;
 			children = (
+				897600C71B045EAB00A32F4F /* Model */,
+				897600C31B045E7000A32F4F /* Dao */,
 				894D4AC71AFF5E17006F97B2 /* HomePageViewController.h */,
 				894D4AC81AFF5E17006F97B2 /* HomePageViewController.m */,
 			);
@@ -167,6 +175,24 @@
 				B039F1EB1B0249B400787C57 /* UADB.m */,
 			);
 			path = ODBC;
+			sourceTree = "<group>";
+		};
+		897600C31B045E7000A32F4F /* Dao */ = {
+			isa = PBXGroup;
+			children = (
+				897600C41B045E8700A32F4F /* HomeDao.h */,
+				897600C51B045E8700A32F4F /* HomeDao.m */,
+			);
+			path = Dao;
+			sourceTree = "<group>";
+		};
+		897600C71B045EAB00A32F4F /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				897600C81B04776300A32F4F /* News.h */,
+				897600C91B04776300A32F4F /* News.m */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 		897A95F51AFC85E700BEEEFB = {
@@ -445,12 +471,14 @@
 				897A96071AFC85E800BEEEFB /* AppDelegate.m in Sources */,
 				897A960A1AFC85E800BEEEFB /* MasterViewController.m in Sources */,
 				B039F1EC1B0249B400787C57 /* UADB.m in Sources */,
+				897600CA1B04776300A32F4F /* News.m in Sources */,
 				898F0A741B0099A100091005 /* UAHttpRequest.m in Sources */,
 				898F0A6E1B005D3600091005 /* UAViewController.m in Sources */,
 				898F0A711B00984C00091005 /* UARequestModel.m in Sources */,
 				897A96041AFC85E700BEEEFB /* main.m in Sources */,
 				898F0A6D1B005D3600091005 /* UATableViewController.m in Sources */,
 				898F0A6C1B005D3600091005 /* UATabBarController.m in Sources */,
+				897600C61B045E8700A32F4F /* HomeDao.m in Sources */,
 				897123281B01C0D9009FA77D /* UASetRequestManager.m in Sources */,
 				894D4AC91AFF5E17006F97B2 /* HomePageViewController.m in Sources */,
 			);

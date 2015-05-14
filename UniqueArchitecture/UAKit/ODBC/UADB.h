@@ -7,7 +7,6 @@
 //
 
 #import <Foundation/Foundation.h>
-#import <FMDB/FMDB.h>
 
 @interface UADB : NSObject
 
@@ -24,7 +23,7 @@
  *
  *  @since 3.6.1
  */
-- (void) open;
+- (void)open;
 
 
 /*!

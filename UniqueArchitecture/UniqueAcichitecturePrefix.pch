@@ -15,4 +15,10 @@
 #import "UAConfigManager.h"
 #import "UniqueArchitecture.h"
 #import "UASingleClass.h"
+
+#import <Mantle/Mantle.h>
+#import <AFNetworking/AFNetworking.h>
+#import <FMDB/FMDB.h>
+
+
 #endif
