@@ -24,7 +24,7 @@ static classname *shareInatance = nil;\
             shareInatance = [super allocWithZone:zone];\
         }\
     }\
-    return nil;\
+    return shareInatance;\
 }\
 \
 - (instancetype)copy{\

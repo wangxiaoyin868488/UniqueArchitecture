@@ -17,31 +17,31 @@
 @end
 
 @implementation UADB
-//SYNTHESIZE_SINGLE_CLASS(UADB);
-
-static UADB *shareInatance = nil;
-
-+ (instancetype)shareInstance{
-    @synchronized(self){
-        if (shareInatance == nil) {
-            shareInatance = [[UADB alloc] init];
-        }
-    }
-    return shareInatance;
-}
-
-+ (instancetype)allocWithZone:(struct _NSZone *)zone{
-    @synchronized(self){
-        if (shareInatance == nil) {
-            shareInatance = [super allocWithZone:zone];
-        }
-    }
-    return shareInatance;
-}
-
-- (instancetype)copy{
-    return shareInatance;
-}
+SYNTHESIZE_SINGLE_CLASS(UADB);
+//
+//static UADB *shareInatance = nil;
+//
+//+ (instancetype)shareInstance{
+//    @synchronized(self){
+//        if (shareInatance == nil) {
+//            shareInatance = [[UADB alloc] init];
+//        }
+//    }
+//    return shareInatance;
+//}
+//
+//+ (instancetype)allocWithZone:(struct _NSZone *)zone{
+//    @synchronized(self){
+//        if (shareInatance == nil) {
+//            shareInatance = [super allocWithZone:zone];
+//        }
+//    }
+//    return shareInatance;
+//}
+//
+//- (instancetype)copy{
+//    return shareInatance;
+//}
 
 - (instancetype)init{
     self = [super init];

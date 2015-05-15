@@ -49,6 +49,38 @@
             endingLineNumber = "52"
             landmarkName = "-dropViewDidBeginRefreshing:"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__53-[HomePageViewController dropViewDidBeginRefreshing:]_block_invoke"
+                  moduleName = "UniqueArchitecture"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pub/Documents/Git/UniqueArchitecture/UniqueArchitecture/View/HomePageViewController.m"
+                  timestampString = "453354110.751192"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "413">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__53-[HomePageViewController dropViewDidBeginRefreshing:]_block_invoke"
+                  moduleName = "UniqueArchitecture"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pub/Documents/Git/UniqueArchitecture/UniqueArchitecture/View/HomePageViewController.m"
+                  timestampString = "453354110.751394"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "53"
+                  endingLineNumber = "53"
+                  offsetFromSymbolStart = "485">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -74,7 +106,7 @@
                   moduleName = "UniqueArchitecture"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pub/Documents/Git/UniqueArchitecture/UniqueArchitecture/View/Model/News.m"
-                  timestampString = "453292923.466291"
+                  timestampString = "453354110.752331"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "34"
@@ -89,7 +121,7 @@
                   moduleName = "UniqueArchitecture"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pub/Documents/Git/UniqueArchitecture/UniqueArchitecture/View/Model/News.m"
-                  timestampString = "453292923.466481"
+                  timestampString = "453354110.752613"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "35"
@@ -111,7 +143,7 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "48"
             endingLineNumber = "48"
-            landmarkName = "-insertWithDictionary:"
+            landmarkName = "-updateWithSql:withArgumentsInArray:"
             landmarkType = "5">
          </BreakpointContent>
       </BreakpointProxy>
@@ -127,8 +159,55 @@
             endingColumnNumber = "9223372036854775807"
             startingLineNumber = "59"
             endingLineNumber = "59"
-            landmarkName = "-insertWithDictionary:"
+            landmarkName = "-queryWithSql:"
             landmarkType = "5">
+            <Locations>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "-[UABaseDao queryWithSql:]"
+                  moduleName = "UniqueArchitecture"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pub/Documents/Git/UniqueArchitecture/UniqueArchitecture/UAKit/ODBC/UABaseDao.m"
+                  timestampString = "453354110.754169"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "39">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__Block_byref_object_copy_"
+                  moduleName = "UniqueArchitecture"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pub/Documents/Git/UniqueArchitecture/UniqueArchitecture/UAKit/ODBC/UABaseDao.m"
+                  timestampString = "453354110.754352"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "16">
+               </Location>
+               <Location
+                  shouldBeEnabled = "Yes"
+                  ignoreCount = "0"
+                  continueAfterRunningActions = "No"
+                  symbolName = "__Block_byref_object_dispose_"
+                  moduleName = "UniqueArchitecture"
+                  usesParentBreakpointCondition = "Yes"
+                  urlString = "file:///Users/pub/Documents/Git/UniqueArchitecture/UniqueArchitecture/UAKit/ODBC/UABaseDao.m"
+                  timestampString = "453354110.75451"
+                  startingColumnNumber = "9223372036854775807"
+                  endingColumnNumber = "9223372036854775807"
+                  startingLineNumber = "59"
+                  endingLineNumber = "59"
+                  offsetFromSymbolStart = "16">
+               </Location>
+            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
    </Breakpoints>
