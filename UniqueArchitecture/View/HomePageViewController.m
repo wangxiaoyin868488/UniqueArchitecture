@@ -9,6 +9,8 @@
 #import "HomePageViewController.h"
 #import "News.h"
 #import "HomeDao.h"
+#import "HomeViewCell.h"
+#import "DetailViewController.h"
 
 #define URL_DB @"http://www.weather.com.cn/adat/sk/101010100.html"
 
@@ -16,6 +18,7 @@
 
 - (void)viewDidLoad{
     [super viewDidLoad];
+    self.title = @"Index";
     
     NSArray *paths = NSSearchPathForDirectoriesInDomains(NSDocumentDirectory, NSUserDomainMask, YES);
     NSString *documentDirectory = [paths objectAtIndex:0];
@@ -59,7 +62,6 @@
    
 }
 
-
 - (void)beginRefreshing{
     [_refreshControl beginRefreshing];
     DBGLog(@"beginRefreshing..");
@@ -70,4 +72,32 @@
     DBGLog(@"endRefreshing..");
 }
 
+#pragma mark - UITableViewDelegate method-
+- (NSInteger)numberOfSectionsInTableView:(UITableView *)tableView{
+    return 1;
+}
+
+- (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
+    return 15;
+}
+
+- (UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    static NSString *cellIdentifier = @"cellidentifier";
+    UITableViewCell *cell = nil;
+    cell = [tableView dequeueReusableCellWithIdentifier:cellIdentifier];
+    if (cell == nil) {
+        cell = [[HomeViewCell alloc] initWithStyle:UITableViewCellStyleDefault reuseIdentifier:cellIdentifier];
+    }
+    return cell;
+}
+
+- (CGFloat)tableView:(UITableView *)tableView heightForRowAtIndexPath:(NSIndexPath *)indexPath{
+    return 100.0f;
+}
+
+- (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
+    [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    DetailViewController *detailVC = [[DetailViewController alloc] init];
+    [self.navigationController pushViewController:detailVC animated:YES];
+}
 @end

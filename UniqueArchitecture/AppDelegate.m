@@ -8,6 +8,7 @@
 
 #import "AppDelegate.h"
 #import "UADB.h"
+#import "HomePageViewController.h"
 
 @interface AppDelegate () <UISplitViewControllerDelegate>
 
@@ -17,7 +18,12 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    
+    self.window = [[UIWindow alloc] initWithFrame:[[UIScreen mainScreen] bounds]];
+    [self.window setBackgroundColor:[UIColor whiteColor]];
+    HomePageViewController *homeVC = [[HomePageViewController alloc] init];
+    UINavigationController *navi = [[UINavigationController alloc] initWithRootViewController:homeVC];
+    self.window.rootViewController = navi;
+    [self.window makeKeyAndVisible];
     return YES;
 }
 
