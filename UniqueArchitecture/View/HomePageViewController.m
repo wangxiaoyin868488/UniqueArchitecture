@@ -11,6 +11,7 @@
 #import "HomeDao.h"
 #import "HomeViewCell.h"
 #import "DetailViewController.h"
+#import "UANewWebViewController.h"
 
 #define URL_DB @"http://www.weather.com.cn/adat/sk/101010100.html"
 
@@ -29,6 +30,7 @@
     news.city = @"sh";
     news.time = @"123";
     [dao insertWithNews:news];
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated{
@@ -103,7 +105,14 @@
 
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
-    DetailViewController *detailVC = [[DetailViewController alloc] init];
-    [self.navigationController pushViewController:detailVC animated:YES];
+    
+    if (indexPath.row%2 == 0) {
+        DetailViewController *detailVC = [[DetailViewController alloc] init];
+        [self.navigationController pushViewController:detailVC animated:YES];
+    }else{
+        UANewWebViewController *webView = [[UANewWebViewController alloc] init];
+        [self.navigationController pushViewController:webView animated:YES];
+
+    }
 }
 @end

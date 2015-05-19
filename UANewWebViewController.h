@@ -10,4 +10,9 @@
 
 @interface UANewWebViewController : UAViewController
 
+- (instancetype)initWithUrlString:(NSString *)urlString;
+
+@property (nonatomic,assign)BOOL isSupportShare;
+@property (nonatomic,assign)BOOL isBackToTop;
+
 @end

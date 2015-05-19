@@ -34,7 +34,7 @@
 #define EXTENDED_LAYOUT_TOP_OFFSET           (([[[UIDevice currentDevice] systemVersion] floatValue] >= 7) ? 64 : 0.0)
 
 // 2.0以上系统为64,以下为0
-#define JD_TOP_OFFSET                   (([[[UIDevice currentDevice] systemVersion] floatValue] >= 7) ? 64 : 0)
+#define UA_TOP_OFFSET                   (([[[UIDevice currentDevice] systemVersion] floatValue] >= 7) ? 64 : 0)
 
 
 #endif
