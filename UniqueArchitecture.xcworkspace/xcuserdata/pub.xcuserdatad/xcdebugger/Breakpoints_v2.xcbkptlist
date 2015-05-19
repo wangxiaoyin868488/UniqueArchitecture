@@ -9,22 +9,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "UniqueArchitecture/View/HomePageViewController.m"
-            timestampString = "453292110.036986"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "48"
-            endingLineNumber = "48"
-            landmarkName = "-dropViewDidBeginRefreshing:"
-            landmarkType = "5">
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "UniqueArchitecture/UAKit/UANetWork/UAHttpRequest.m"
             timestampString = "453092733.142393"
             startingColumnNumber = "9223372036854775807"
@@ -41,54 +25,6 @@
             shouldBeEnabled = "Yes"
             ignoreCount = "0"
             continueAfterRunningActions = "No"
-            filePath = "UniqueArchitecture/View/HomePageViewController.m"
-            timestampString = "453292110.036986"
-            startingColumnNumber = "9223372036854775807"
-            endingColumnNumber = "9223372036854775807"
-            startingLineNumber = "52"
-            endingLineNumber = "52"
-            landmarkName = "-dropViewDidBeginRefreshing:"
-            landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__53-[HomePageViewController dropViewDidBeginRefreshing:]_block_invoke"
-                  moduleName = "UniqueArchitecture"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pub/Documents/Git/UniqueArchitecture/UniqueArchitecture/View/HomePageViewController.m"
-                  timestampString = "453354110.751192"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "413">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__53-[HomePageViewController dropViewDidBeginRefreshing:]_block_invoke"
-                  moduleName = "UniqueArchitecture"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pub/Documents/Git/UniqueArchitecture/UniqueArchitecture/View/HomePageViewController.m"
-                  timestampString = "453354110.751394"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "53"
-                  endingLineNumber = "53"
-                  offsetFromSymbolStart = "485">
-               </Location>
-            </Locations>
-         </BreakpointContent>
-      </BreakpointProxy>
-      <BreakpointProxy
-         BreakpointExtensionID = "Xcode.Breakpoint.FileBreakpoint">
-         <BreakpointContent
-            shouldBeEnabled = "Yes"
-            ignoreCount = "0"
-            continueAfterRunningActions = "No"
             filePath = "UniqueArchitecture/View/Model/News.m"
             timestampString = "453286370.963039"
             startingColumnNumber = "9223372036854775807"
@@ -97,38 +33,6 @@
             endingLineNumber = "34"
             landmarkName = "+cityId1JSONTransformer"
             landmarkType = "5">
-            <Locations>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "+[News cityId1JSONTransformer]"
-                  moduleName = "UniqueArchitecture"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pub/Documents/Git/UniqueArchitecture/UniqueArchitecture/View/Model/News.m"
-                  timestampString = "453354110.752331"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "34"
-                  endingLineNumber = "34"
-                  offsetFromSymbolStart = "30">
-               </Location>
-               <Location
-                  shouldBeEnabled = "Yes"
-                  ignoreCount = "0"
-                  continueAfterRunningActions = "No"
-                  symbolName = "__30+[News cityId1JSONTransformer]_block_invoke"
-                  moduleName = "UniqueArchitecture"
-                  usesParentBreakpointCondition = "Yes"
-                  urlString = "file:///Users/pub/Documents/Git/UniqueArchitecture/UniqueArchitecture/View/Model/News.m"
-                  timestampString = "453354110.752613"
-                  startingColumnNumber = "9223372036854775807"
-                  endingColumnNumber = "9223372036854775807"
-                  startingLineNumber = "35"
-                  endingLineNumber = "35"
-                  offsetFromSymbolStart = "48">
-               </Location>
-            </Locations>
          </BreakpointContent>
       </BreakpointProxy>
       <BreakpointProxy
@@ -170,7 +74,7 @@
                   moduleName = "UniqueArchitecture"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pub/Documents/Git/UniqueArchitecture/UniqueArchitecture/UAKit/ODBC/UABaseDao.m"
-                  timestampString = "453354110.754169"
+                  timestampString = "453707743.55842"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "59"
@@ -185,7 +89,7 @@
                   moduleName = "UniqueArchitecture"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pub/Documents/Git/UniqueArchitecture/UniqueArchitecture/UAKit/ODBC/UABaseDao.m"
-                  timestampString = "453354110.754352"
+                  timestampString = "453707743.558624"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "59"
@@ -200,7 +104,7 @@
                   moduleName = "UniqueArchitecture"
                   usesParentBreakpointCondition = "Yes"
                   urlString = "file:///Users/pub/Documents/Git/UniqueArchitecture/UniqueArchitecture/UAKit/ODBC/UABaseDao.m"
-                  timestampString = "453354110.75451"
+                  timestampString = "453707743.558805"
                   startingColumnNumber = "9223372036854775807"
                   endingColumnNumber = "9223372036854775807"
                   startingLineNumber = "59"

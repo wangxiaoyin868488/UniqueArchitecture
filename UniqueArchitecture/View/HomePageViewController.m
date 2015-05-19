@@ -31,6 +31,12 @@
     [dao insertWithNews:news];
 }
 
+- (void)viewWillAppear:(BOOL)animated{
+    [super viewWillAppear:animated];
+}
+
+#pragma mark -  method
+
 - (void)dropViewDidBeginRefreshing:(id)sender{
     DBGLog(@"dropViewDidBeginRefreshing..");
     

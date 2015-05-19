@@ -65,9 +65,16 @@
     [loginButton setTitleColor:[UIColor blackColor] forState:UIControlStateNormal];
     [loginButton addTarget:self action:@selector(loginAction:) forControlEvents:UIControlEventTouchUpInside];
     [self.view addSubview:loginButton];
+    
+    UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(closeKeyboard:)];
+    [self.view addGestureRecognizer:tap];
 }
 
 - (void)loginAction:(id)sender{
     NSLog(@"loging...");
+}
+
+- (void)closeKeyboard:(id)sender{
+    [[UIApplication sharedApplication].keyWindow endEditing:YES];
 }
 @end
